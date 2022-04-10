@@ -1,0 +1,25 @@
+{
+  "name": "@tabler/icons-react",
+  "version": "2.0.0",
+  "author": "codecalm",
+  "license": "MIT",
+  "homepage": "https://tabler-icons.io",
+  "bugs": {
+    "url": "https://github.com/tabler/tabler-icons/issues"
+  },
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/codecalm"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tabler/tabler-icons.git",
+    "directory": "packages/icons-react"
+  },
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn clean && yarn build:icons",
+    "build:icons": "echo 'Build icons React'",
+    "clean": "rm -rf dist && rm -rf ./src/icons/*.js"
+  }
+}

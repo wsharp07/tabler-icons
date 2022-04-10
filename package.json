@@ -1,5 +1,12 @@
 {
-  "name": "@tabler/icons",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ],
+    "nohoist": [
+    ]
+  },
   "version": "1.63.0",
   "description": "A set of free MIT-licensed high-quality SVG icons for you to use in your web projects.",
   "repository": {
@@ -40,13 +47,29 @@
     "access": "public"
   },
   "scripts": {
+    "build": "yarn optimize && yarn update-version && yarn build-svg && yarn icons-react build",
+    "build-svg": "rm -rf dist && bundle exec jekyll build && mkdir dist && cp -R _site/{icons,tags.json} dist/ && rm -rf _site",
+    "optimize": "babel-node ./scripts/optimize.js --presets @babel/env",
+    "update-version": "babel-node ./scripts/updateVersion.js --presets @babel/env",
+    "update-unicode": "babel-node ./scripts/updateUnicode.js --presets @babel/env",
+
     "start": "bundle exec jekyll serve --watch --livereload --trace --livereload_port 8888",
+
+    "icons": "yarn workspace @tabler/icons",
+    "icons-angular": "yarn workspace @tabler/icons-angular",
+    "icons-iconfont": "yarn workspace @tabler/icons-iconfont",
+    "icons-preact": "yarn workspace @tabler/icons-preact",
+    "icons-react": "yarn workspace @tabler/icons-react",
+    "icons-svelte": "yarn workspace @tabler/icons-svelte",
+    "icons-vue-2": "yarn workspace @tabler/icons-vue-2",
+    "icons-vue-3": "yarn workspace @tabler/icons-vue-3",
+
     "prebuild-react": "rm -rf ./icons-react/dist/",
     "build-react": "rollup -c",
-    "optimize": "gulp optimize",
     "release": "release-it",
-    "build": "gulp build",
-    "build-iconfont": "gulp build-iconfont",
+    "_optimize": "gulp optimize",
+    "_build": "gulp build",
+    "_build-iconfont": "gulp build-iconfont",
     "import": "./_import.sh && gulp optimize"
   },
   "keywords": [
@@ -63,6 +86,7 @@
     "@babel/parser": "7.11.5",
     "@babel/preset-env": "7.11.5",
     "@babel/preset-react": "7.10.4",
+    "@babel/node": "^7.13.10",
     "@rollup/plugin-babel": "5.2.1",
     "@rollup/plugin-commonjs": "15.1.0",
     "@rollup/plugin-node-resolve": "9.0.0",
