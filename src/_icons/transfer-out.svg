@@ -1,6 +1,7 @@
 ---
 category: E-commerce
 version: "1.41"
+unicode: "ef30"
 ---
 <svg>
   <path d="M4 19v2h16v-14l-8 -4l-8 4v2" />

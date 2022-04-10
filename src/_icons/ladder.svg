@@ -1,5 +1,6 @@
 ---
 version: "1.51"
+unicode: "efe2"
 ---
 <svg>
   <path d="M8 3v18" />

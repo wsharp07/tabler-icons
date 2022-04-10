@@ -1,6 +1,7 @@
 ---
 category: Arrows
 version: "1.57"
+unicode: "f050"
 ---
 <svg>
   <path d="M18 3v6" />

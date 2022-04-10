@@ -1,5 +1,6 @@
 ---
 version: "1.50"
+unicode: "efcf"
 ---
 <svg>
   <path d="M17 7v13h-10v-13l5 -3z" />

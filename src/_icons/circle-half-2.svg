@@ -1,6 +1,7 @@
 ---
 category: Design
 version: "1.52"
+unicode: "eff3"
 ---
 <svg>
   <circle cx="12" cy="12" r="9" />

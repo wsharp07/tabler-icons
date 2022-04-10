@@ -1,6 +1,7 @@
 ---
 category: Brand
 version: "1.45"
+unicode: "ef6d"
 ---
 <svg>
   <circle cx="12" cy="14" r="7" />

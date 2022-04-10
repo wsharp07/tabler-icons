@@ -1,6 +1,7 @@
 ---
 category: Document
 version: "1.56"
+unicode: "f037"
 ---
 <svg>
     <ellipse cx="12" cy="12.75" rx="4" ry="1.75" />

@@ -2,6 +2,7 @@
 tags: [banner, pin, report, map, warning, alert]
 category: Map
 version: "1.39"
+unicode: "ee8c"
 ---
 <svg>
   <path d="M5 14h14v-9h-14v16" />

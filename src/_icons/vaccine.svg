@@ -2,6 +2,7 @@
 tags: [illness, sickness, disease, injection, medicine, medical, doctor, nurse]
 version: "1.39"
 category: Health
+unicode: "ef04"
 ---
 <svg>
   <path d="M17 3l4 4" />

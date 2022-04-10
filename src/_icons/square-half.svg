@@ -1,6 +1,7 @@
 ---
 category: Design
 version: "1.52"
+unicode: "effb"
 ---
 <svg>
   <path d="M12 4v16" />

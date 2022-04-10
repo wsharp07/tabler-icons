@@ -1,5 +1,6 @@
 ---
 version: "1.48"
+unicode: "efab"
 ---
 <svg>
   <path d="M9 20h6" />

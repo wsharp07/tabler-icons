@@ -1,5 +1,6 @@
 ---
 version: "1.46"
+unicode: "ef88"
 ---
 <svg>
   <path d="M4 7h16" />

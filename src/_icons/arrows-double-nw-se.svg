@@ -1,6 +1,7 @@
 ---
 category: Arrows
 version: "1.37"
+unicode: "eddf"
 ---
 <svg>
   <path d="M14 21l-11 -11" />

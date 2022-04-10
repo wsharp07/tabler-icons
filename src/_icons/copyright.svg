@@ -2,6 +2,7 @@
 tags: [licence, license]
 version: "1.0"
 category: Symbols
+unicode: "ea7b"
 ---
 <svg>
   <circle cx="12" cy="12" r="9" />

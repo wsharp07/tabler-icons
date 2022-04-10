@@ -1,5 +1,6 @@
 ---
 version: "1.63"
+unicode: "f0c9"
 ---
 <svg>
   <path d="M3 19h.01" />

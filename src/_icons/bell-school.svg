@@ -1,5 +1,6 @@
 ---
 version: "1.58"
+unicode: "f05e"
 ---
 <svg>
   <circle cx="10" cy="10" r="6" />

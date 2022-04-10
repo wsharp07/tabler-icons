@@ -1,5 +1,6 @@
 ---
 version: "1.49"
+unicode: "efb4"
 ---
 <svg>
   <path d="M12 19v.01" />

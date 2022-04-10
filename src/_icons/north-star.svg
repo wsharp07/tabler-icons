@@ -1,6 +1,7 @@
 ---
 version: "1.54"
 category: Map
+unicode: "f014"
 ---
 <svg>
   <path d="M3 12h18" />

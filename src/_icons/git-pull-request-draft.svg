@@ -1,5 +1,6 @@
 ---
 version: "1.49"
+unicode: "efb7"
 ---
 <svg>
   <circle cx="6" cy="18" r="2" />

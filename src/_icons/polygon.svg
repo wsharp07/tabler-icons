@@ -1,5 +1,6 @@
 ---
 version: "1.50"
+unicode: "efd0"
 ---
 <svg>
   <circle cx="12" cy="5" r="2" />

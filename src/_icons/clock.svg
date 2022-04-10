@@ -1,6 +1,7 @@
 ---
 tags: [time, watch, alarm]
 version: "1.0"
+unicode: "ea70"
 ---
 <svg>
   <circle cx="12" cy="12" r="9" />

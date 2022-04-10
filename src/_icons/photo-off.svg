@@ -2,6 +2,7 @@
 tags: [image, picture, landscape, camera]
 category: Media
 version: "1.22"
+unicode: "ecf6"
 ---
 <svg>
   <line x1="3" y1="3" x2="21" y2="21" />

@@ -1,5 +1,6 @@
 ---
 version: "1.43"
+unicode: "ef4d"
 ---
 <svg>
   <path d="M13 12v.01" />

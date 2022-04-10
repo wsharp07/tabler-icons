@@ -1,6 +1,7 @@
 ---
 category: Design
 version: "1.41"
+unicode: "ef22"
 ---
 <svg>
   <path d="M4 18v.01" />

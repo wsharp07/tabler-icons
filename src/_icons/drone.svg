@@ -2,6 +2,7 @@
 tags: [device, fly, aircraft, surveillance, control, autonomous]
 category: Vehicles
 version: "1.33"
+unicode: "ed79"
 ---
 <svg>
   <path d="M10 10h4v4h-4z" />

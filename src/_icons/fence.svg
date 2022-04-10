@@ -1,6 +1,7 @@
 ---
 category: Buildings
 version: "1.41"
+unicode: "ef2a"
 ---
 <svg>
   <path d="M4 12v4h16v-4z" />

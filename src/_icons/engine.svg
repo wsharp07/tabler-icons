@@ -1,6 +1,7 @@
 ---
 category: Vehicles
 version: "1.46"
+unicode: "ef7e"
 ---
 <svg>
   <path d="M3 10v6" />

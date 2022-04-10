@@ -1,6 +1,7 @@
 ---
 category: Mood
 version: "1.47"
+unicode: "ef96"
 ---
 <svg>
   <circle cx="12" cy="12" r="9" />

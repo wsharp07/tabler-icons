@@ -1,6 +1,7 @@
 ---
 version: "1.53"
 category: Arrows
+unicode: "effe"
 ---
 <svg>
   <path d="M16 4h4v4" />

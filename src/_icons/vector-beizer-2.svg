@@ -2,6 +2,7 @@
 tags: [curve, parametric, design, vector graphics, representation]
 category: Design
 version: "1.27"
+unicode: "ed3a"
 ---
 <svg>
   <rect x="3" y="3" width="4" height="4" rx="1" />

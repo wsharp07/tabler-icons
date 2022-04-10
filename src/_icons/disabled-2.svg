@@ -2,6 +2,7 @@
 tags: [wheelchair, accessible, handicapped]
 version: "1.4"
 category: Health
+unicode: "ebaf"
 ---
 <svg>
   <circle cx="17" cy="6" r="2" />

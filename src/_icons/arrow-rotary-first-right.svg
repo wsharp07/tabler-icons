@@ -1,6 +1,7 @@
 ---
 category: Arrows
 version: "1.57"
+unicode: "f054"
 ---
 <svg>
   <circle cx="8" cy="7" r="3" />
