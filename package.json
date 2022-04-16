@@ -5,10 +5,9 @@
     "packages": [
       "packages/*"
     ],
-    "nohoist": [
-    ]
+    "nohoist": []
   },
-  "version": "1.64.0",
+  "version": "1.65.0",
   "description": "A set of free MIT-licensed high-quality SVG icons for you to use in your web projects.",
   "repository": {
     "type": "git",
@@ -54,9 +53,7 @@
     "optimize": "babel-node ./scripts/optimize.js --presets @babel/env",
     "update-version": "babel-node ./scripts/update-version.js --presets @babel/env",
     "update-unicode": "babel-node ./scripts/update-unicode.js --presets @babel/env",
-
     "start": "bundle exec jekyll serve --watch --livereload --trace --livereload_port 8888",
-
     "icons": "yarn workspace @tabler/icons",
     "icons-angular": "yarn workspace @tabler/icons-angular",
     "icons-iconfont": "yarn workspace @tabler/icons-iconfont",
@@ -64,7 +61,6 @@
     "icons-svelte": "yarn workspace @tabler/icons-svelte",
     "icons-vue-2": "yarn workspace @tabler/icons-vue-2",
     "icons-vue-3": "yarn workspace @tabler/icons-vue-3",
-
     "prebuild-react": "rm -rf ./icons-react/dist/",
     "_build-react": "rollup -c",
     "release": "release-it",
