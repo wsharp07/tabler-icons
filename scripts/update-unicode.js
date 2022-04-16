@@ -63,7 +63,7 @@ const updateIconsUnicode = () => {
     })
 
     if (newIcons.length) {
-      console.log('newIcons', newIcons);
+      console.log('newIcons', newIcons.join(', '));
       addUnicodeToIcons(newIcons)
     }
   })

@@ -48,11 +48,12 @@
     "access": "public"
   },
   "scripts": {
-    "build": "yarn optimize && yarn update-version && yarn build-svg && yarn icons-react build",
+    "build": "yarn optimize && yarn update-version && yarn update-unicode && yarn build-svg && yarn build-react",
     "build-svg": "rm -rf dist && bundle exec jekyll build && mkdir dist && cp -R _site/{icons,tags.json} dist/ && rm -rf _site",
+    "build-react": "babel-node ./scripts/build-react.js",
     "optimize": "babel-node ./scripts/optimize.js --presets @babel/env",
-    "update-version": "babel-node ./scripts/updateVersion.js --presets @babel/env",
-    "update-unicode": "babel-node ./scripts/updateUnicode.js --presets @babel/env",
+    "update-version": "babel-node ./scripts/update-version.js --presets @babel/env",
+    "update-unicode": "babel-node ./scripts/update-unicode.js --presets @babel/env",
 
     "start": "bundle exec jekyll serve --watch --livereload --trace --livereload_port 8888",
 
@@ -60,13 +61,12 @@
     "icons-angular": "yarn workspace @tabler/icons-angular",
     "icons-iconfont": "yarn workspace @tabler/icons-iconfont",
     "icons-preact": "yarn workspace @tabler/icons-preact",
-    "icons-react": "yarn workspace @tabler/icons-react",
     "icons-svelte": "yarn workspace @tabler/icons-svelte",
     "icons-vue-2": "yarn workspace @tabler/icons-vue-2",
     "icons-vue-3": "yarn workspace @tabler/icons-vue-3",
 
     "prebuild-react": "rm -rf ./icons-react/dist/",
-    "build-react": "rollup -c",
+    "_build-react": "rollup -c",
     "release": "release-it",
     "_optimize": "gulp optimize",
     "_build": "gulp build",

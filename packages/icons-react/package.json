@@ -16,10 +16,5 @@
     "url": "https://github.com/tabler/tabler-icons.git",
     "directory": "packages/icons-react"
   },
-  "sideEffects": false,
-  "scripts": {
-    "build": "yarn clean && yarn build:icons",
-    "build:icons": "echo 'Build icons React'",
-    "clean": "rm -rf dist && rm -rf ./src/icons/*.js"
-  }
+  "sideEffects": false
 }
