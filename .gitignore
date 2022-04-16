@@ -4,6 +4,7 @@ node_modules/
 .jekyll-cache/
 package-lock.json
 Gemfile.lock
+packages/*
 packages-zip/*
 .DS_Store
 icons-outlined/

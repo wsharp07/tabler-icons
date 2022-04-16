@@ -1,4 +1,5 @@
 {
+  "name": "@tabler/icons",
   "private": true,
   "workspaces": {
     "packages": [
@@ -7,7 +8,7 @@
     "nohoist": [
     ]
   },
-  "version": "1.63.0",
+  "version": "1.64.0",
   "description": "A set of free MIT-licensed high-quality SVG icons for you to use in your web projects.",
   "repository": {
     "type": "git",
