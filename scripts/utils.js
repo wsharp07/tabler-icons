@@ -12,3 +12,8 @@ export const camelize = function (str) {
     return word.toUpperCase()
   }).replace(/\s+/g, '')
 }
+
+export const optimizeSvgCode = function (svgCode) {
+  return svgCode
+  .replace('<path stroke="none" d="M0 0h24v24H0z" fill="none"/>', '')
+}

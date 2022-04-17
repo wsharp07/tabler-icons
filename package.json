@@ -49,7 +49,8 @@
   "scripts": {
     "build": "yarn optimize && yarn update-version && yarn update-unicode && yarn build-svg && yarn build-react",
     "build-svg": "rm -rf dist && bundle exec jekyll build && mkdir dist && cp -R _site/{icons,tags.json} dist/ && rm -rf _site",
-    "build-react": "babel-node ./scripts/build-react.js",
+    "prebuild-react": "rm -rf ./packages/icons-react/{icons,index.js,index.d.ts}",
+    "build-react": "babel-node ./scripts/build-react.js --presets @babel/env",
     "optimize": "babel-node ./scripts/optimize.js --presets @babel/env",
     "update-version": "babel-node ./scripts/update-version.js --presets @babel/env",
     "update-unicode": "babel-node ./scripts/update-unicode.js --presets @babel/env",
@@ -61,7 +62,7 @@
     "icons-svelte": "yarn workspace @tabler/icons-svelte",
     "icons-vue-2": "yarn workspace @tabler/icons-vue-2",
     "icons-vue-3": "yarn workspace @tabler/icons-vue-3",
-    "prebuild-react": "rm -rf ./icons-react/dist/",
+    "_prebuild-react": "rm -rf ./icons-react/dist/",
     "_build-react": "rollup -c",
     "release": "release-it",
     "_optimize": "gulp optimize",

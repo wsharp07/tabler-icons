@@ -1,14 +1,23 @@
-const glob = require('glob')
-const path = require('path')
-const fs = require('fs')
-const { default: svgr } = require('@svgr/core')
-const { asyncForEach, camelize } = require('./utils')
+#!/usr/bin/env node
+
+import glob from 'glob'
+import path from 'path'
+import fs from 'fs'
+import svgr from '@svgr/core'
+import { asyncForEach, camelize, optimizeSvgCode } from './utils'
 
 const packageDir = path.resolve(__dirname, '../packages/icons-react')
 
-const optimizeSvgCode = function (svgCode) {
-  return svgCode
-  .replace('<path stroke="none" d="M0 0h24v24H0z" fill="none"/>', '')
+const componentTemplate = function template(
+    { template },
+    opts,
+    { imports, componentName, props, jsx, exports },
+) {
+  return template.ast`
+    ${imports}
+    function ${componentName}({ size = 24, color = "currentColor", stroke = 2, ...props }) { return (${jsx}); }
+    ${exports}
+  `;
 }
 
 const componentName = function (file) {
@@ -33,16 +42,12 @@ type TablerIcon = FC<TablerIconProps>;\n\n`
         fileName = path.basename(file, '.svg') + '.js',
         iconComponentName = componentName(file)
 
-    if(fs.existsSync(`${packageDir}/icons/`)) {
-      fs.rmSync(`${packageDir}/icons/`, { recursive: true })
-    }
-
     fs.mkdirSync(`${packageDir}/icons/`, { recursive: true })
 
     await svgr(svgCode, {
       icon: false,
       svgProps: { width: '{size}', height: '{size}', strokeWidth: '{stroke}', stroke: '{color}' },
-      template: require('./svgr-template')
+      template: componentTemplate
     }, { componentName: iconComponentName }).then(jsCode => {
       fs.writeFileSync(`${packageDir}/icons/${fileName}`, jsCode)
 
